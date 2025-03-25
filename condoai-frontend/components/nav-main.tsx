@@ -11,8 +11,8 @@ import {
   SidebarMenuLabel,
   SidebarMenuItem,
   SidebarMenuSub,
-  SidebarMenuSubItem,
-} from "@/components/ui/sidebar"
+  SidebarMenuSubItem, SidebarSeparator
+} from '@/components/ui/sidebar'
 import SidebarMenuActiveButton from '@/components/ui/sidebar-menu-active-button'
 
 
@@ -38,10 +38,11 @@ export function NavMain({
 
             <SidebarMenuItem key={item.title}>
 
-                <SidebarMenuLabel>
+                <SidebarMenuLabel className="text-xs">
                   {item.icon && <item.icon />}
                   <span>{item.title}</span>
                 </SidebarMenuLabel>
+              <SidebarSeparator className="m-2 mx-0"/>
 
               <SidebarMenuSub className="group-data-[collapsible=icon]:visible">
                   {item.items?.map((subItem) => (
@@ -51,7 +52,8 @@ export function NavMain({
                       <SidebarMenuActiveButton
                           href={subItem.url}
                           icon={subItem.icon && <subItem.icon />}
-                          title={subItem.title} />
+                          title={subItem.title}
+                      />
 
 
                     </SidebarMenuSubItem>

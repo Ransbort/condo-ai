@@ -1,43 +1,15 @@
 
 
 import * as React from "react"
-import {
-  FolderOpen,
-  FolderTree,
-  HandCoins, HousePlus,
-  Landmark,
-  MessageCircleQuestion, MessageSquareShare,
-  Minus,
-  NotebookText,
-  Presentation
-} from 'lucide-react'
 
-import { NavMain } from "@/components/nav-main"
 
 import {
   Sidebar,
-  SidebarContent,
-  SidebarFooter,
   SidebarHeader,
-  SidebarMenu,
-  SidebarMenuLabel,
-  SidebarMenuItem,
   SidebarSeparator,
   SidebarGroup
 } from '@/components/ui/sidebar'
 import { TabControl } from '@/components/tab-control'
-
-// This is sample data.
-const data = {
-  user: {
-    name: "shadcn",
-    email: "m@example.com",
-    type: "Manager",
-    avatar: "/avatars/shadcn.jpg",
-  },
-
-
-}
 
 export function WidgetSidebar({
      ...props

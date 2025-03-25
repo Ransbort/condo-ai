@@ -5,9 +5,6 @@ import * as React from "react"
 
 
 import {
-  AudioWaveform,
-  Command,
-  GalleryVerticalEnd,
 
   MessageCircleQuestion,
 
@@ -25,6 +22,7 @@ import {
 
 import { NavMain } from "@/components/nav-main"
 import { NavUser } from "@/components/nav-user"
+import CompanySwitcher from "@/components/companyswitcher"
 
 import {
   Sidebar,
@@ -32,7 +30,9 @@ import {
   SidebarFooter,
   SidebarHeader,
 } from '@/components/ui/sidebar'
+import Logo from '@/components/ui/logo'
 
+const logo = <Logo />
 
 // This is sample data.
 const data = {
@@ -42,28 +42,12 @@ const data = {
     type: "Manager",
     avatar: "/avatars/shadcn.jpg",
   },
-  teams: [
-    {
-      name: "Acme Inc",
-      logo: GalleryVerticalEnd,
-      plan: "Enterprise",
-    },
-    {
-      name: "Acme Corp.",
-      logo: AudioWaveform,
-      plan: "Startup",
-    },
-    {
-      name: "Evil Corp.",
-      logo: Command,
-      plan: "Free",
-    },
-  ],
+
   navMain: [
     {
       title: "Home",
       isActive: true,
-      icon: Minus,
+      icon: "",
       items: [
         {
           title: "Ask AI",
@@ -76,7 +60,7 @@ const data = {
 
     {
       title: "Managers",
-      icon: Minus,
+      icon: "",
       isActive: true,
       items: [
         {
