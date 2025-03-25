@@ -59,7 +59,7 @@ export function TabControl() {
               recusandae rerum sapiente totam ullam ut velit veniam voluptas voluptatum.
               Molestias mollitia neque nesciunt quod.
             </CardContent>
-            <CardFooter className="px-0 pt-2">
+            <CardFooter className="p-2">
               <InputChatMessage />
             </CardFooter>
           </TabsContent>
@@ -94,7 +94,7 @@ export function TabControl() {
               recusandae rerum sapiente totam ullam ut velit veniam voluptas voluptatum.
               Molestias mollitia neque nesciunt quod.
             </CardContent>
-            <CardFooter className="px-0 pt-2">
+            <CardFooter className="p-2">
               <InputChatMessage />
             </CardFooter>
           </TabsContent>
