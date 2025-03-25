@@ -11,7 +11,6 @@ import {
 
   MessageCircleQuestion,
 
-  SquareTerminal,
   Landmark,
   NotebookText,
 

@@ -1,9 +1,19 @@
 
 
 import * as React from "react"
-import { Plus } from "lucide-react"
+import {
+  FolderOpen,
+  FolderTree,
+  HandCoins, HousePlus,
+  Landmark,
+  MessageCircleQuestion, MessageSquareShare,
+  Minus,
+  NotebookText,
+  Presentation
+} from 'lucide-react'
 
-import { NavUser } from "@/components/nav-user"
+import { NavMain } from "@/components/nav-main"
+
 import {
   Sidebar,
   SidebarContent,
@@ -25,20 +35,8 @@ const data = {
     type: "Manager",
     avatar: "/avatars/shadcn.jpg",
   },
-  calendars: [
-    {
-      name: "My Calendars",
-      items: ["Personal", "Work", "Family"],
-    },
-    {
-      name: "Favorites",
-      items: ["Holidays", "Birthdays"],
-    },
-    {
-      name: "Other",
-      items: ["Travel", "Reminders", "Deadlines"],
-    },
-  ],
+
+
 }
 
 export function WidgetSidebar({
@@ -57,7 +55,7 @@ export function WidgetSidebar({
         "--sidebar-width": "21rem",
       }}
     >
-      <SidebarGroup className= "h-svh overflow:hidden">
+      <SidebarGroup className= "h-full overflow:hidden">
 
           <SidebarHeader>
             Welcome
