@@ -22,7 +22,7 @@ import {
 
 import { NavMain } from "@/components/nav-main"
 import { NavUser } from "@/components/nav-user"
-import CompanySwitcher from "@/components/companyswitcher"
+
 
 import {
   Sidebar,
@@ -30,9 +30,9 @@ import {
   SidebarFooter,
   SidebarHeader,
 } from '@/components/ui/sidebar'
-import Logo from '@/components/ui/logo'
 
-const logo = <Logo />
+
+
 
 // This is sample data.
 const data = {
@@ -51,7 +51,7 @@ const data = {
       items: [
         {
           title: "Ask AI",
-          url: "/condoai",
+          url: "/",
           icon: MessageCircleQuestion,
         },
 
@@ -71,7 +71,7 @@ const data = {
         {
           title: "Asset",
           icon: FolderTree,
-          url: "/assets",
+          url: "/asset",
         },
         {
           title: "Bids & Quotes",

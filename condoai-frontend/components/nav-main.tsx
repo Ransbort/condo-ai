@@ -22,7 +22,7 @@ export function NavMain({
   items: {
     title: string
     isActive?: boolean
-    icon?: LucideIcon
+    // icon?: LucideIcon
     items?: {
       title: string
       url: string
@@ -39,7 +39,7 @@ export function NavMain({
             <SidebarMenuItem key={item.title}>
 
                 <SidebarMenuLabel className="text-xs">
-                  {item.icon && <item.icon />}
+                  {/*{item.icon && <item.icon />}*/}
                   <span>{item.title}</span>
                 </SidebarMenuLabel>
               <SidebarSeparator className="m-2 mx-0"/>
@@ -50,6 +50,7 @@ export function NavMain({
 
                       {/*This sets the active button on the sidebar*/}
                       <SidebarMenuActiveButton
+                          key={subItem.url}
                           href={subItem.url}
                           icon={subItem.icon && <subItem.icon />}
                           title={subItem.title}

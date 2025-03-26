@@ -21,7 +21,7 @@ export default function SidebarMenuActiveButton(
   const isActive = pathName === href
   return (
     <SidebarMenuSubButton asChild tooltip={title} isActive={isActive}>
-      <Link href={href} className="-mx-[2.5px]">
+      <Link key={href} href={href} className="-mx-[2.5px]">
         {icon}
         <span>{title}</span>
       </Link>
